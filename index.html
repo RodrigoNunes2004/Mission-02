@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Personal Website</title>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-container">
+      <h1>Rodrigo De Fraga Nunes</h1>
+      <p>Welcome to my personal website</p>
+    </div>
+  </header>
+
+  <!-- NAV SECTION -->
+<nav class="navbar">
+ <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Awards</a></li>
+    <li><a href="#">Contact</a></li>
+ </ul>
+</nav>
+
+  <main>
+    <div class="main-section">
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="about-container">
+          <img src="images/computering.png" alt="computering" class="about-image">
+
+          <div class="about-text">
+            <div class="typing-block">
+              <p class="typing line1">This is a short paragraph about me.</p>
+              <p class="typing line2">I enjoy experimenting with CSS layouts.</p>
+              <p class="typing line3">Every day I try to learn something new.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>My Skills:</h2>
+        <div class="skills-flex">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="mailto:example@example.com" method="post" autocomplete="on">
+
+          <div class="label-icon">
+            <i class="bx bxs-user"></i>
+            <label for="name">Name</label>
+           </div> 
+
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+
+          <div class="label-icon">
+            <i class="bx bxs-envelope"></i>
+            <label for="email">Email</label>
+          </div> 
+
+          <input type="email" id="email" name="email" required placeholder="rodrigdfn@missionreadyhq.com">
+
+            <div class="label-icon">
+             <i class="bx bxs-lock-alt"></i>
+             <label for="password">Password</label>
+            </div>
+
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+            <div class="label-icon">
+             <i class="bx bxs-message-rounded"></i>
+             <label for="message">Message</label>
+            </div>
+
+          <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+          
+          <input type="submit" value="Send Message">
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 All rights reserve.</p>
+    <a href="https://github.com/RodrigoNunes2004">My GitHub</a>
+  </footer>
+
+</body>
+</html>
