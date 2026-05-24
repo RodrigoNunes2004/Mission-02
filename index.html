@@ -21,14 +21,23 @@
   </header>
 
   <!-- NAV SECTION -->
-<nav class="navbar">
- <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Awards</a></li>
-    <li><a href="#">Contact</a></li>
- </ul>
-</nav>
+  <nav class="navbar">
+
+  <!-- Toggle button-->
+   <a href="#" id="toggle-btn" class="toggle-btn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+   </a>
+   <div id="navbar-links">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="https://github.com/RodrigoNunes2004">Portfolio</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+  </nav>
 
   <main>
     <div class="main-section">
@@ -51,11 +60,30 @@
       <!-- Skills Section -->
       <section id="skills">
         <h2>My Skills:</h2>
+
         <div class="skills-flex">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">JavaScript</div>
+
+          <div class="skill-card">
+            HTML
+            <!-- Input field for rating HTML skill -->
+            <input type="number" id="htmlScore" min="0" max="10" placeholder="0-10">
+          </div>
+
+          <div class="skill-card">
+            CSS
+            <input type="number" id="cssScore" min="0" max="10" placeholder="0-10">
+          </div>
+
+          <div class="skill-card">
+            JavaScript
+            <input type="number" id="jsScore" min="0" max="10" placeholder="0-10">
+          </div>
+
         </div>
+
+        <button id="rateSkillsBtn">Rate My Skills</button>
+        <!-- Result will be displayed here in this empty paragraph -->
+        <p id="skillResult"></p>
       </section>
 
       <!-- Contact Form -->
@@ -67,31 +95,27 @@
           <div class="label-icon">
             <i class="bx bxs-user"></i>
             <label for="name">Name</label>
-           </div> 
-
+          </div>
           <input type="text" id="name" name="name" required placeholder="Your full name">
 
           <div class="label-icon">
             <i class="bx bxs-envelope"></i>
             <label for="email">Email</label>
-          </div> 
-
+          </div>
           <input type="email" id="email" name="email" required placeholder="rodrigdfn@missionreadyhq.com">
 
-            <div class="label-icon">
-             <i class="bx bxs-lock-alt"></i>
-             <label for="password">Password</label>
-            </div>
-
+          <div class="label-icon">
+            <i class="bx bxs-lock-alt"></i>
+            <label for="password">Password</label>
+          </div>
           <input type="password" id="password" name="password" required placeholder="Enter your password">
 
-            <div class="label-icon">
-             <i class="bx bxs-message-rounded"></i>
-             <label for="message">Message</label>
-            </div>
-
+          <div class="label-icon">
+            <i class="bx bxs-message-rounded"></i>
+            <label for="message">Message</label>
+          </div>
           <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
-          
+
           <input type="submit" value="Send Message">
         </form>
       </section>
@@ -105,5 +129,6 @@
     <a href="https://github.com/RodrigoNunes2004">My GitHub</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
