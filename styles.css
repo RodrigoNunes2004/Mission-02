@@ -100,7 +100,7 @@ footer {
    ABOUT SECTION
    =========================== */
 .main-section {
-  background-image: url("images/background.png");
+  background-image: url("./images/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,24 +146,50 @@ footer {
 }
 
 .typing {
-  width: 0;
   overflow: hidden;
-  white-space: now-wrap;
-  border-right: none;
-  animation: typingLoop 8s steps(40) infinite;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(40, end) forwards;
 }
 
-.line1 { animation-delay: 0s; }
-.line2 { animation-delay: 3s; }
-.line3 { animation-delay: 6s; }
-
-@keyframes typingLoop {
-  0% { width: 0; }
-  37.5% { width: 100%; }
-  75% { width: 100%; }
-  100% { width: 0; }
+/* stagger timing */
+.line1 {
+  width: 0;
+  animation:
+    typing1 2s steps(32, end) forwards;
 }
 
+.line2 {
+  width: 0;
+  animation:
+    typing2 2s steps(38, end) forwards;
+  animation-delay: 2.5s;
+}
+
+.line3 {
+  width: 0;
+  animation:
+    typing3 2s steps(40, end) forwards;
+  animation-delay: 5s;
+}
+
+@keyframes typing1 {
+  to {
+    width: 32ch;
+  }
+}
+
+@keyframes typing2 {
+  to {
+    width: 42ch;
+  }
+}
+
+@keyframes typing3 {
+  to {
+    width: 40ch;
+  }
+}
 /* ===========================
    SKILLS SECTION
    =========================== */
