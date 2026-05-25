@@ -391,6 +391,39 @@ footer a:hover {
     font-size: 18px;
     width: 100%;
   }
+
+    .typing {
+    width: 100% !important;
+    white-space: normal; /* allows wrapping */
+    overflow: visible;
+    animation: fadeIn 0.8s ease forwards !important;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    animation-delay: 0s !important;
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    overflow-wrap: break-word;
+  }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }
 
 /* ===========================
