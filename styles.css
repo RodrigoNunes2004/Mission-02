@@ -89,6 +89,7 @@ footer {
   height: 28px; /* stabilizes navbar height */
 }
 
+/*TOGGLE BUTTON*/
 .toggle-btn .bar {
   width: 30px;
   height: 4px;

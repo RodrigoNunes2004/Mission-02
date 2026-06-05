@@ -22,7 +22,7 @@ const skills = [
 ];
 
 
-  let totalScore = 0; // VARIABLE TO STORE TOTAL SCORE
+  let totalScore = 0; // VARIABLE TO TOTAL SCORE
   let message = ""; // VARIABLE TO STORE FEEDBACK MESSAGE
 
   // LOOP TO CALCULATE TOTAL SCORE
